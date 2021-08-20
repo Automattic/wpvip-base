@@ -1,6 +1,6 @@
 {
 	"name": "wpvip/core",
-	"type": "library",
+	"type": "wpvip-module",
 	"description": "Core functionality for WPVIP",
 	"keywords": ["wpvip"],
 	"homepage": "https://wpvip.com",
