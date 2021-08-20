@@ -1,7 +1,7 @@
 {
-	"name": "wpvip/core",
+	"name": "wpvip/base",
 	"type": "wpvip-module",
-	"description": "Core functionality for WPVIP",
+	"description": "Base functionality for WPVIP",
 	"keywords": ["wpvip"],
 	"homepage": "https://wpvip.com",
 	"license": "GPL-2.0-or-later",
