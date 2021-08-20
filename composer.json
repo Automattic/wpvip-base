@@ -1,0 +1,11 @@
+{
+	"name": "wpvip/core",
+	"type": "library",
+	"description": "Core functionality for WPVIP",
+	"keywords": ["wpvip"],
+	"homepage": "https://wpvip.com",
+	"license": "GPL-2.0-or-later",
+	"require": {
+		"php": ">=7.3.0"
+	}
+}
