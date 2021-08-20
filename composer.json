@@ -5,6 +5,11 @@
 	"keywords": ["wpvip"],
 	"homepage": "https://wpvip.com",
 	"license": "GPL-2.0-or-later",
+	"autoload": {
+		"psr-4": {
+			"Automattic\\WPVIP\\": "src/"
+		}
+	},
 	"require": {
 		"php": ">=7.4.0"
 	},
