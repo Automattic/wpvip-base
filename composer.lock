@@ -4,8 +4,105 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2ac53cb8b354291397c5ca5c0019fc0d",
-    "packages": [],
+    "content-hash": "023e74bc84c559db5b7495abc7148e89",
+    "packages": [
+        {
+            "name": "psr/log",
+            "version": "1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/d49695b909c3b7628b6289db5479a1c204601f11",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/1.1.4"
+            },
+            "time": "2021-05-03T11:20:27+00:00"
+        },
+        {
+            "name": "wpvip/logger",
+            "version": "dev-trunk",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Automattic/wpvip-logger.git",
+                "reference": "39a812bb5969a472bd275349d536c89a41417161"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Automattic/wpvip-logger/zipball/39a812bb5969a472bd275349d536c89a41417161",
+                "reference": "39a812bb5969a472bd275349d536c89a41417161",
+                "shasum": ""
+            },
+            "require": {
+                "psr/log": "^1.1.4"
+            },
+            "require-dev": {
+                "automattic/vipwpcs": "2.3.2",
+                "dealerdirect/phpcodesniffer-composer-installer": "0.7.1",
+                "erusev/parsedown": "1.7.4",
+                "phpcompatibility/phpcompatibility-wp": "2.1.1",
+                "phpunit/phpunit": "7.5.20"
+            },
+            "default-branch": true,
+            "type": "wpvip-module",
+            "autoload": {
+                "psr-4": {
+                    "Automattic\\WPVIP\\Logging\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Enables PHP logging on WPVIP",
+            "homepage": "https://wpvip.com",
+            "keywords": [
+                "wpvip"
+            ],
+            "support": {
+                "issues": "https://github.com/Automattic/wpvip-logger/issues",
+                "source": "https://github.com/Automattic/wpvip-logger/tree/trunk"
+            },
+            "time": "2021-08-25T22:46:18+00:00"
+        }
+    ],
     "packages-dev": [
         {
             "name": "automattic/vipwpcs",
@@ -2206,7 +2303,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "wpvip/logger": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
