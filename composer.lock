@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "023e74bc84c559db5b7495abc7148e89",
+    "content-hash": "aa4c35c6e66dfb51ea236890b601f14d",
     "packages": [
         {
             "name": "psr/log",
@@ -101,6 +101,52 @@
                 "source": "https://github.com/Automattic/wpvip-logger/tree/trunk"
             },
             "time": "2021-08-25T22:46:18+00:00"
+        },
+        {
+            "name": "wpvip/mail",
+            "version": "dev-trunk",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Automattic/wpvip-mail.git",
+                "reference": "04024695aa7179cd9626a13e85c86641db934a20"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Automattic/wpvip-mail/zipball/04024695aa7179cd9626a13e85c86641db934a20",
+                "reference": "04024695aa7179cd9626a13e85c86641db934a20",
+                "shasum": ""
+            },
+            "require": {
+                "psr/log": "^1.1.4"
+            },
+            "require-dev": {
+                "automattic/vipwpcs": "2.3.2",
+                "dealerdirect/phpcodesniffer-composer-installer": "0.7.1",
+                "erusev/parsedown": "1.7.4",
+                "phpcompatibility/phpcompatibility-wp": "2.1.1",
+                "phpunit/phpunit": "7.5.20"
+            },
+            "default-branch": true,
+            "type": "wpvip-module",
+            "autoload": {
+                "psr-4": {
+                    "Automattic\\WPVIP\\Mail\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Enables mail sending WPVIP",
+            "homepage": "https://wpvip.com",
+            "keywords": [
+                "wpvip"
+            ],
+            "support": {
+                "issues": "https://github.com/Automattic/wpvip-mail/issues",
+                "source": "https://github.com/Automattic/wpvip-mail/tree/trunk"
+            },
+            "time": "2021-08-30T15:02:37+00:00"
         }
     ],
     "packages-dev": [
@@ -2304,7 +2350,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "wpvip/logger": 20
+        "wpvip/logger": 20,
+        "wpvip/mail": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
